@@ -1,14 +1,14 @@
 ---
 import "../styles/style.css";
-import Hero from "../componets/hero.astro"; 
-import Section1 from "../componets/section1.astro";
-import MagivenSection from "../componets/magiven_section.astro";
-import CitatSection from "../componets/citat_section.astro";
-import DataSection from "../componets/data_section.astro";
-import BallondyrSection from "../componets/ballondyr_section.astro";
-import HennytextboxSection from "../componets/hennytextbox_section.astro";
-import GalleriSection from "../componets/galleri_section.astro";
-import Footer from "../componets/footer.astro";
+import Hero from "../componets/Hero.astro";
+import Section1 from "../componets/Section1.astro";
+import MagivenSection from "../componets/Magiven_section.astro";
+import CitatSection from "../componets/Citat_section.astro";
+import DataSection from "../componets/Data_section.astro";
+import BallondyrSection from "../componets/Ballondyr_section.astro";
+import HennytextboxSection from "../componets/Hennytextbox_section.astro";
+import GalleriSection from "../componets/Galleri_section.astro";
+import Footer from "../componets/Footer.astro";
 ---
 
 <html lang="en">
@@ -23,8 +23,20 @@ import Footer from "../componets/footer.astro";
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
-    <header></header>
-    <footer></footer>
+    <header>
+      <Hero />
+    </header>
+    <Section1 />
+    <MagivenSection />
+    <CitatSection />
+    <DataSection />
+    <BallondyrSection />
+    <HennytextboxSection />
+    <GalleriSection />
+
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
 <script>
@@ -32,8 +44,11 @@ import Footer from "../componets/footer.astro";
   window.addEventListener("scroll", onScroll);
 
   function onScroll() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    let height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
   }
