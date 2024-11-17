@@ -1,0 +1,41 @@
+---
+const { name, description, image, alt } = Astro.props;
+---
+
+<div class="grid2">
+  <div>
+    <h2 class="magiven_navn">{name}</h2>
+    <p class="magiven_info">{description}</p>
+  </div>
+  <div>
+    <img src={image} alt={alt} class="magiven_img" />
+  </div>
+</div>
+
+
+<style>
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    margin-bottom: 2rem; 
+}
+
+.magiven_navn {
+    font-family: 'Courier New', Courier, monospace;
+    color: #F4BA35;
+    font-size: 40px;
+}
+
+.magiven_info {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFBEF;
+    font-size: 24px; 
+}
+
+.magiven_img {
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+</style>

@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-
-
-
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr; /* Enkelt kolonne til mobil */
+  }
+}
 
 /* The progress container (grey background) */
 .progress-container {
