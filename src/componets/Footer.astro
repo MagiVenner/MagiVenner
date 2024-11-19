@@ -1,0 +1,53 @@
+---
+import Stotknap from "../componets/Stotknap.astro";
+---
+
+<main>
+  <footer>
+    <div class="stotknap"><Stotknap /></div>
+    <section>
+      <div>
+        <img class="logo" src="../../public/img/logo_blaa.svg" alt="Logo" />
+      </div>
+      <div>
+        <p>Følg arbejdet her</p>
+        <div>
+          <img class="socials" src="../../public/img/facebook.png" alt="" />
+          <img class="socials" src="../../public/img/instagram.png" alt="" />
+          <img class="socials" src="../../public/img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </footer>
+</main>
+
+<style>
+  .stotknap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  p {
+    color: #f4ba35;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials {
+    width: 20%;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .logo {
+    width: 80%;
+  }
+
+  footer {
+    background-color: #fffbef;
+    padding-top: 5rem;
+  }
+</style>
