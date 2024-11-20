@@ -23,30 +23,3 @@
   background: #e5e170;
   width: 0%;
 }
-
-@font-face {
-  font-family: raleway_regular;
-  src: url(../fonts/Raleway-Regular.ttf);
-}
-
-@font-face {
-  font-family: raleway_semibold;
-  src: url(../fonts/Raleway-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: kavoon;
-  src: url(../fonts/Kavoon-Regular.ttf);
-}
-
-p {
-  font-family: raleway_regular;
-}
-
-h1 {
-  font-family: kavoon;
-}
-
-h2 {
-  font-family: kavoon;
-}
