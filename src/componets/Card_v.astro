@@ -3,7 +3,7 @@ const { name, description, image, alt } = Astro.props;
 ---
 
 <div class="grid2">
-  <div>
+  <div class="magiven_container">
     <img src={image} alt={alt} class="magiven_img" />
   </div>
   <div class="text">
@@ -40,11 +40,14 @@ const { name, description, image, alt } = Astro.props;
       font-size: 18px; 
      
   }
+
+  .magiven_container{
+max-width: 50%;
+  }
   
   .magiven_img {
       border-radius: 30px;
-      width: 50%;
-      height: 50%;
+      width: 100%;
       object-fit: cover;
      
   }
