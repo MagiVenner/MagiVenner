@@ -3,7 +3,7 @@ const { name, description, image, alt } = Astro.props;
 ---
 
 <div class="grid2">
-  <div>
+  <div class="text">
     <h2 class="magiven_navn">{name}</h2>
     <p class="magiven_info">{description}</p>
   </div>
@@ -20,16 +20,20 @@ const { name, description, image, alt } = Astro.props;
     margin-bottom: 2rem;
 }
 
+.text{
+  max-width: 350px;
+}
+
 .magiven_navn {
     font-family: kavoon;
     color: #F4BA35;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .magiven_info {
     font-family: raleway_semibold;
     color: #FFFBEF;
-    font-size: 24px; 
+    font-size: 18px; 
 }
 
 .magiven_img {
