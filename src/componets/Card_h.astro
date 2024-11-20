@@ -3,12 +3,12 @@ const { name, description, image, alt } = Astro.props;
 ---
 
 <div class="grid2">
+  <div>
+    <img src={image} alt={alt} class="magiven_img" />
+  </div>
   <div class="text">
     <h2 class="magiven_navn">{name}</h2>
     <p class="magiven_info">{description}</p>
-  </div>
-  <div>
-    <img src={image} alt={alt} class="magiven_img" />
   </div>
 </div>
 
