@@ -3,46 +3,62 @@ const { name, description, image, alt } = Astro.props;
 ---
 
 <div class="grid2">
+  <div class="magiven_container">
+    <img src={image} alt={alt} class="magiven_img" />
+  </div>
   <div class="text">
     <h2 class="magiven_navn">{name}</h2>
     <p class="magiven_info">{description}</p>
-  </div>
-  <div>
-    <img src={image} alt={alt} class="magiven_img" />
+    <img src="./public/img/star.svg" alt="star" class="star"/>
   </div>
 </div>
 
 <style>
-.grid2 {
-    display: flex;
-    margin-bottom: 15rem;
-    margin-top: 15rem;
-    justify-content: center;
-}
-
-.text{
-  max-width: 350px;
+  .grid2 {
+      display: flex;
+      margin-bottom: 15rem;
+      margin-top: 15rem;
+      justify-content: center;
+      gap: 2rem;
+  }
   
-}
+  .text{
+    max-width: 350px;
+    
+  }
+  
+  .magiven_navn {
+      font-family: kavoon;
+      color: #F4BA35;
+      font-size: 25px;
+      margin-bottom: 2rem;
+  }
+  
+  .magiven_info {
+      font-family: raleway_semibold;
+      color: #FFFBEF;
+      font-size: 18px; 
+     
+  }
 
-.magiven_navn {
-    font-family: kavoon;
-    color: #F4BA35;
-    font-size: 25px;
-    margin-bottom: 2rem;
-}
+  .magiven_container{
+max-width: 40%;
+overflow: hidden;
+  }
+  
+  .magiven_img {
+      border-radius: 30px;
+      width: 100%;
+      object-fit: cover;
+     
+  }
 
-.magiven_info {
-    font-family: raleway_semibold;
-    color: #FFFBEF;
-    font-size: 18px; 
-   
-}
+  .star{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
 
-.magiven_img {
-    border-radius: 30px;
-    width: 60%;
-    object-fit: cover;
-   
-}
-</style>
+  .star:hover {
+    transform: scale(1.2) rotate(15deg); /* Skalér og roter */
+  }
+  </style>
+  
