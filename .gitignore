@@ -24,3 +24,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Ignorer alle videofiler
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.flv
