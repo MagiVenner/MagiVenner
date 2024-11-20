@@ -1,14 +1,46 @@
-<main><header></header></main>
+<main>
+  <article>
+    <div class="overskrift">
+      <img src="./public/img/magi-hero.svg" alt="Magi venner overskrift" />
+    </div>
+  </article>
+  <article>
+    <div class="stotknap">
+      <img src="./public/img/stot_magien_hvid.svg" alt="Støt magien knap" />
+    </div>
+  </article>
+</main>
 
 <style>
-  header {
-    background-image: url("../../public/img/herosection.jpg");
+  main {
+    background-image: url("./public/img/heroimg.webp");
     background-size: cover;
     background-position: left;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
-    padding: 2rem;
-    padding-top: 5rem;
+    height: 100vh;
+    padding: 0;
     background-attachment: fixed;
+  }
+
+  .stotknap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stotknap :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .overskrift {
+    margin-top: 15rem;
   }
 </style>
