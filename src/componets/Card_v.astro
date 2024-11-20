@@ -9,6 +9,7 @@ const { name, description, image, alt } = Astro.props;
   <div class="text">
     <h2 class="magiven_navn">{name}</h2>
     <p class="magiven_info">{description}</p>
+    <img src="./public/img/star1.svg" alt="star" class="star"/>
   </div>
 </div>
 
@@ -51,6 +52,15 @@ overflow: hidden;
       width: 100%;
       object-fit: cover;
      
+  }
+
+
+  .star{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+
+  .star:hover {
+    transform: scale(1.2) rotate(15deg); /* Skalér og roter */
   }
   </style>
   
