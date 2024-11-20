@@ -3,30 +3,34 @@
 
 
 <section>
-    <iframe  class="video"
-        
-        src="https://www.youtube.com/embed/4KrGqQKFOSY" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <video autoplay loop muted width="900" height="650" controls>
+        <source src="/img/data1.mp4" type="video/mp4">
+        Din browser understøtter ikke videoafspilning.
+    </video>
 </section>
 <section>
-    <iframe  class="video"
-        
-        src="https://www.youtube.com/embed/sq1byWImWGc" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+    <video autoplay loop muted width="900" height="650" controls>
+        <source src="/img/data2.mp4" type="video/mp4">
+        Din browser understøtter ikke videoafspilning.
+    </video>
 </section>
 <style>
 
 section{
     background-color:  #283885;
+    display: flex; /* Aktiver Flexbox */
+    justify-content: center; /* Centrer horisontalt */
+    align-items: center; /* Centrer vertikalt */
+    height: 100vh; /* Gør sektionen lige så høj som browserens synlige område */
+    margin: 0; /* Fjern eventuel margin */
 }
 
+.video{
+    display: block;
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt */
+    height: 80vh; /* Fylder hele højden af browseren */
+    border-radius: 30px;
+}
 
 </style>
