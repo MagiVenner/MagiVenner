@@ -4,10 +4,11 @@ import Card_v from "../componets/Card_v.astro";
 
 const magicFriends1 = [
   {
+    class: "henny",
     name: "Henny Solskin",
     description:
       "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde på Herning.",
-    image: "../../public/img/henny_solskin.webp",
+    image: "",
     alt: "Henny",
   },
   {
@@ -97,5 +98,9 @@ const allFriends = [
     padding: 2rem;
     display: grid;
     gap: 2rem;
+  }
+
+  .henny {
+    background-image: url("../../public/img/Henny_solskin.webp");
   }
 </style>
