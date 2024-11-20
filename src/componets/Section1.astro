@@ -2,7 +2,7 @@
 ---
 
 <section class="section1">
-    <img class="textbox" src="/img/textbox2.svg" alt="textbox">
+    <img class="textbox" src="/img/textbox2.svg" alt="textbox1">
     <iframe  class="video"
         width="400" 
         height="650" 
@@ -12,7 +12,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
     </iframe>
-    <img class="textbox" src="/img/textbox1.svg" alt="textbox">
+    <img class="textbox" src="/img/textbox1.svg" alt="textbox2">
 </section>
 
 
@@ -46,8 +46,14 @@
     border-radius: 30px;
 }
 
-.textbox{
-    z-index: -9;
+.textbox1{
+    z-index: 9;
+    position: absolute;
+
+}
+
+.textbox2{
+    z-index: 10;
     position: absolute;
 
 }
