@@ -5,13 +5,15 @@ import Card_v from "../componets/Card_v.astro";
 const magicFriends1 = [
   {
     name: "Henny Solskin",
-    description: "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde på Herning.",
-    image: "/public/img/Henny_solskin.webp",
+    description:
+      "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde på Herning.",
+    image: "../../public/img/henny_solskin.webp",
     alt: "Henny",
   },
   {
     name: "Rasmus Fup & Fidus",
-    description: "Rasmus Fup og Fidus fra AUH tryller på de forskellige børneafdelinger på Aarhus og Familiehuset.",
+    description:
+      "Rasmus Fup og Fidus fra AUH tryller på de forskellige børneafdelinger på Aarhus og Familiehuset.",
     image: "/public/img/Rasmus.webp",
     alt: "Rasmus",
   },
@@ -23,7 +25,8 @@ const magicFriends1 = [
   },
   {
     name: "Fabelagtige Falbe",
-    description: "Rasmus Fup og Fidus fra AUH tryller på de forskellige børneafdelinger på Aarhus og Familiehuset.",
+    description:
+      "Rasmus Fup og Fidus fra AUH tryller på de forskellige børneafdelinger på Aarhus og Familiehuset.",
     image: "/public/img/falbe.webp",
     alt: "Falbe",
   },
@@ -32,19 +35,22 @@ const magicFriends1 = [
 const magicFriends2 = [
   {
     name: "Birger",
-    description: "Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år.",
+    description:
+      "Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år.",
     image: "/public/img/birger.webp",
     alt: "Birger",
   },
   {
     name: "Trylle Michael",
-    description: "Tryller på Riget. En ægte magiker, der også får de voksne til at forbløffes.",
+    description:
+      "Tryller på Riget. En ægte magiker, der også får de voksne til at forbløffes.",
     image: "/public/img/Michael.webp",
     alt: "Michael",
   },
   {
     name: "Lasse NK",
-    description: "Lasse er på Herlev og Hvidovre og Gram Slot. Han er en mester til balloner og har en populær Segway.",
+    description:
+      "Lasse er på Herlev og Hvidovre og Gram Slot. Han er en mester til balloner og har en populær Segway.",
     image: "/public/img/Lasse.webp",
     alt: "Lasse",
   },
@@ -64,30 +70,32 @@ const allFriends = [
 <main class="magiven_main">
   <h1>Mød dine magi-venner fra KidsAid</h1>
 
-  {allFriends.map(friend =>
-    friend.type === "h" ? (
-      <Card_h 
-        name={friend.name}
-        description={friend.description}
-        image={friend.image}
-        alt={friend.alt}
-      />
-    ) : (
-      <Card_v 
-        name={friend.name}
-        description={friend.description}
-        image={friend.image}
-        alt={friend.alt}
-      />
+  {
+    allFriends.map((friend) =>
+      friend.type === "h" ? (
+        <Card_h
+          name={friend.name}
+          description={friend.description}
+          image={friend.image}
+          alt={friend.alt}
+        />
+      ) : (
+        <Card_v
+          name={friend.name}
+          description={friend.description}
+          image={friend.image}
+          alt={friend.alt}
+        />
+      )
     )
-  )}
+  }
 </main>
 
 <style>
-.magiven_main {
-  background-color: #283885;
-  padding: 2rem;
-  display: grid;
-  gap: 2rem;
-}
+  .magiven_main {
+    background-color: #283885;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+  }
 </style>
